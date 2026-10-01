@@ -1,0 +1,35 @@
+name: Validate PilotTrace
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify generated example replay
+        run: |
+          python tools/make_example.py
+          python -m pilottrace \
+            --trace examples/sample_trace.json \
+            --manifest examples/sample_manifest.json \
+            --output /tmp/pilottrace-report.json

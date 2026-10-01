@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use PilotTrace, please cite it as below."
+title: "PilotTrace"
+type: software
+authors:
+  - family-names: "Brisson"
+    given-names: "Jean-François"
+    affiliation: "Spark AI NLP"
+    orcid: "https://orcid.org/0009-0000-9778-5374"
+repository-code: "https://github.com/sparkainlp-x/pilottrace"
+url: "https://sparkainlpx.xyz"
+license: AGPL-3.0-only
+version: "0.1.0"
+date-released: "2026-10-01"
+abstract: >-
+  Illustrative, offline Python prototype for validating and deterministically
+  scoring caller-mapped numeric trace data. It accepts 512-value frames,
+  partitions them into sixteen contiguous blocks, and reports reproducible
+  scores, validation failures, hashes, and descriptive metrics for supplied
+  labels. Research software; synthetic examples only; no operational,
+  safety, medical, or process-control claims.
+keywords:
+  - pilottrace
+  - deterministic-scoring
+  - numeric-trace
+  - schema-validation
+  - research-software
+  - python
