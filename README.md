@@ -1,5 +1,10 @@
 # PilotTrace
 
+[![CI](https://github.com/sparkainlp-x/pilottrace/actions/workflows/ci.yml/badge.svg)](https://github.com/sparkainlp-x/pilottrace/actions/workflows/ci.yml)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
+[![Status: research prototype](https://img.shields.io/badge/status-research%20prototype-orange.svg)](#boundaries)
+[![Evidence: SYNTHETIC](https://img.shields.io/badge/evidence-SYNTHETIC-blue.svg)](#boundaries)
+
 PilotTrace is an illustrative, offline Python prototype for validating and scoring caller-mapped numeric trace data. It accepts UTF-8 JSON inputs; it does not establish compatibility with external equipment or actual telemetry.
 
 Each accepted frame has exactly 512 finite numeric values. The program retains valid frames, reports every rejected frame with its zero-based index and reasons, divides each accepted frame into 16 contiguous blocks of 32 values, and scores each block:
