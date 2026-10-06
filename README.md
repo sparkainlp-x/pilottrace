@@ -4,6 +4,7 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 [![Status: research prototype](https://img.shields.io/badge/status-research%20prototype-orange.svg)](#boundaries)
 [![Evidence: SYNTHETIC](https://img.shields.io/badge/evidence-SYNTHETIC-blue.svg)](#boundaries)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23187278.svg)](https://doi.org/10.5281/zenodo.23187278)
 
 PilotTrace is an illustrative, offline Python prototype for validating and scoring caller-mapped numeric trace data. It accepts UTF-8 JSON inputs; it does not establish compatibility with external equipment or actual telemetry.
 
@@ -108,7 +109,7 @@ For caller-provided data, replace each illustrative declaration with the channel
 
 ## Repository and citation
 
-The explanatory paper is available as [PilotTrace.pdf](PilotTrace.pdf). Citation metadata is in [`CITATION.cff`](CITATION.cff), and the archival metadata prepared for Zenodo is in [`.zenodo.json`](.zenodo.json). Once a Zenodo release is created, the version DOI should be added to `CITATION.cff` and the DOI link should be added here and to the repository homepage.
+The explanatory paper is available as [PilotTrace.pdf](PilotTrace.pdf). Citation metadata is in [`CITATION.cff`](CITATION.cff), and the archival metadata prepared for Zenodo is in [`.zenodo.json`](.zenodo.json). Archived on Zenodo: concept DOI [10.5281/zenodo.23187278](https://doi.org/10.5281/zenodo.23187278) (all versions); v0.1.1: [10.5281/zenodo.23187279](https://doi.org/10.5281/zenodo.23187279).
 
 This repository follows the Spark AI NLP research-software convention:
 
