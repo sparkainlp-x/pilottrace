@@ -1,6 +1,8 @@
 {
   "upload_type": "software",
   "title": "PilotTrace",
+  "version": "0.1.1",
+  "publication_date": "2026-10-06",
   "description": "<p>PilotTrace is an illustrative, offline Python prototype for validating and deterministically scoring caller-mapped numeric trace data. Each accepted frame contains exactly 512 finite numeric values, partitioned into sixteen contiguous blocks of 32 values. Each block is scored as <code>0.45 * max(abs(x)) + 0.35 * RMS(x) + 0.20 * mean(abs(x))</code>; a block is flagged when its score is greater than or equal to the finite, non-negative threshold frozen in the manifest.</p><p>The report preserves rejected-frame indices and reasons, exact-input SHA-256 hashes, all block scores, flagged blocks, and descriptive frame-classification metrics only for accepted frames carrying supplied boolean labels. The implementation uses only the Python standard library and has no external connections.</p><p><strong>Scope and limits.</strong> This is research software for offline schema and deterministic-arithmetic demonstration. It does not establish compatibility with external equipment or telemetry, and is not validated operational detection, an alarm, safety system, medical device, or process-control system. Examples and tests are SYNTHETIC; no empirical, field, hardware, or clinical performance is claimed.</p>",
   "creators": [
     {

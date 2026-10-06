@@ -3,6 +3,20 @@
 All notable changes to PilotTrace are documented here. The project uses
 [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-10-06
+
+### Changed
+
+- README: added CI, licence, research-prototype and SYNTHETIC badges.
+- Version metadata bumped to 0.1.1 in `pilottrace/__init__.py`, `CITATION.cff`
+  and `.zenodo.json` (first release archived on Zenodo).
+
+### Scope
+
+- No change to validation or scoring behaviour. Synthetic examples and
+  contract tests only; no empirical, field, hardware, medical, safety, alarm,
+  or process-control claims.
+
 ## [0.1.0] - 2026-10-01
 
 ### Added
