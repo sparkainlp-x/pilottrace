@@ -1,9 +1,9 @@
 {
   "upload_type": "software",
-  "title": "PilotTrace",
-  "version": "0.1.1",
-  "publication_date": "2026-10-06",
-  "description": "<p>PilotTrace is an illustrative, offline Python prototype for validating and deterministically scoring caller-mapped numeric trace data. Each accepted frame contains exactly 512 finite numeric values, partitioned into sixteen contiguous blocks of 32 values. Each block is scored as <code>0.45 * max(abs(x)) + 0.35 * RMS(x) + 0.20 * mean(abs(x))</code>; a block is flagged when its score is greater than or equal to the finite, non-negative threshold frozen in the manifest.</p><p>The report preserves rejected-frame indices and reasons, exact-input SHA-256 hashes, all block scores, flagged blocks, and descriptive frame-classification metrics only for accepted frames carrying supplied boolean labels. The implementation uses only the Python standard library and has no external connections.</p><p><strong>Scope and limits.</strong> This is research software for offline schema and deterministic-arithmetic demonstration. It does not establish compatibility with external equipment or telemetry, and is not validated operational detection, an alarm, safety system, medical device, or process-control system. Examples and tests are SYNTHETIC; no empirical, field, hardware, or clinical performance is claimed.</p>",
+  "title": "PilotTrace: offline validation and block scoring of 512-value numeric trace frames",
+  "version": "0.1.2",
+  "publication_date": "2026-10-08",
+  "description": "<p>PilotTrace validates and deterministically scores caller-mapped numeric trace data supplied as UTF-8 JSON. Each accepted frame holds exactly 512 finite values, split into 16 contiguous blocks of 32. Each block is scored as <code>0.45*max|x| + 0.35*RMS(x) + 0.20*mean|x|</code> and flagged when the score reaches a threshold frozen in the run manifest. The report keeps rejected-frame indices and reasons, SHA-256 hashes of the exact inputs, every block score and the flagged blocks; when boolean labels are supplied, it adds descriptive frame-classification metrics for the labelled frames only.</p><p>Scope: PilotTrace applies no preprocessing or calibration and makes no external connections. It is not an alarm, safety or process-control system, and a replay demonstrates input compatibility and deterministic arithmetic, not detection performance. Examples and tests use SYNTHETIC data.</p><p>Usage: Python 3.11 or later, standard library only. Run <code>python3 tools/make_example.py</code> and then <code>python3 -m pilottrace --trace examples/sample_trace.json ...</code> as shown in the README; a single-file version is also provided. Tests: <code>python3 -m unittest discover -s tests -v</code> (run in CI on Python 3.11 to 3.13).</p><p>Citation: cite the concept DOI <a href=\"https://doi.org/10.5281/zenodo.23187278\">10.5281/zenodo.23187278</a> for all versions, or the version DOI of the release you used. Source code: <a href=\"https://github.com/sparkainlp-x/pilottrace\">github.com/sparkainlp-x/pilottrace</a>. Licence: AGPL-3.0-only; commercial licensing is available (see COMMERCIAL-LICENSE.md).</p>",
   "creators": [
     {
       "name": "Brisson, Jean-François",
@@ -14,12 +14,14 @@
   "access_right": "open",
   "license": "AGPL-3.0-only",
   "keywords": [
-    "PilotTrace",
-    "deterministic scoring",
-    "numeric trace",
-    "schema validation",
-    "Python",
-    "research software"
+    "telemetry",
+    "trace validation",
+    "block scoring",
+    "deterministic replay",
+    "reproducibility",
+    "512-channel",
+    "offline",
+    "Python"
   ],
   "related_identifiers": [
     {
@@ -33,5 +35,6 @@
     {
       "identifier": "spark-ai-nlp"
     }
-  ]
+  ],
+  "notes": "Evidence status: SYNTHETIC example data; no field performance is claimed. Commercial licensing: see COMMERCIAL-LICENSE.md."
 }

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use PilotTrace, please cite it as below."
-title: "PilotTrace"
+title: "PilotTrace: offline validation and block scoring of 512-value numeric trace frames"
 type: software
 authors:
   - family-names: "Brisson"
@@ -18,8 +18,8 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23187279
     description: "Version DOI for v0.1.1"
-version: "0.1.1"
-date-released: "2026-10-06"
+version: "0.1.2"
+date-released: "2026-10-08"
 abstract: >-
   Illustrative, offline Python prototype for validating and deterministically
   scoring caller-mapped numeric trace data. It accepts 512-value frames,

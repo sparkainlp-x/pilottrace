@@ -4,7 +4,7 @@ from .api import analyze_bytes, analyze_files, report_json
 from .scoring import score_block, score_frame
 from .validation import ManifestError, PilotTraceError, TraceFormatError
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 __all__ = [
     "analyze_bytes",
