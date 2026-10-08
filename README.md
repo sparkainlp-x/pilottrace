@@ -109,7 +109,7 @@ For caller-provided data, replace each illustrative declaration with the channel
 
 ## Repository and citation
 
-The explanatory paper is available as [PilotTrace.pdf](PilotTrace.pdf). Citation metadata is in [`CITATION.cff`](CITATION.cff), and the archival metadata prepared for Zenodo is in [`.zenodo.json`](.zenodo.json). Archived on Zenodo: concept DOI [10.5281/zenodo.23187278](https://doi.org/10.5281/zenodo.23187278) (all versions); v0.1.1: [10.5281/zenodo.23187279](https://doi.org/10.5281/zenodo.23187279).
+The explanatory paper is available as [PilotTrace.pdf](PilotTrace.pdf). Citation metadata is in [`CITATION.cff`](CITATION.cff), and the archival metadata prepared for Zenodo is in [`.zenodo.json`](.zenodo.json). Archived on Zenodo: concept DOI [10.5281/zenodo.23187278](https://doi.org/10.5281/zenodo.23187278) (all versions); v0.1.2: [10.5281/zenodo.23241690](https://doi.org/10.5281/zenodo.23241690); v0.1.1: [10.5281/zenodo.23187279](https://doi.org/10.5281/zenodo.23187279).
 
 This repository follows the Spark AI NLP research-software convention:
 
