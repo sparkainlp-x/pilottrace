@@ -137,4 +137,6 @@ This repository follows the Spark AI NLP research-software convention:
 
 ## License
 
+Copyright (c) 2026 Jean-François Brisson, Spark AI NLP.
+
 PilotTrace is available under the GNU Affero General Public License v3.0 only (AGPL-3.0-only); see [LICENSE](LICENSE). For proprietary use, see [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md).
